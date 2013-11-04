@@ -1,0 +1,28 @@
+/* $Id: views-styles.css,v 1.1 2009/08/12 04:25:15 johnalbin Exp $ */
+
+/**
+ * @file
+ * Views Styling
+ */
+
+.calendar-calendar div.calendar {
+	font-size: smaller;
+}
+
+.calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a {
+	background: transparent;
+}
+
+.calendar-calendar td .inner div.calendar {
+	background: #EBEFE8;
+	border-top: 2px solid #64102F;
+}
+.attachment-before .view-display-id-date_nav_1 {
+  margin: 10px 0;
+}
+
+#content-area .view-twitter-updates .pager-current,
+#content-area .view-Elizabeth-Blog .pager-current,
+#content-area .view-Front-Page-News .pager-current {
+  display:none;
+}

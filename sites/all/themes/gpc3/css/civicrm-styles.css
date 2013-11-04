@@ -1,0 +1,54 @@
+/*
+ * For civicrm style tweaks (i.e. anything below #crm-container element)
+ * - mainly for improving presentation on narrow screens
+ */
+ 
+ .page-civicrm-profile-create div#crm-container {
+   overflow: visible;
+ }
+ 
+.liquid #crm-container {
+	font-size: .9em;
+}
+
+#crm-container label[for="external_identifier"], #crm-container #external_identifier { display:none; }
+
+#crm-container #nick_name { width:8em; }
+#crm-container #current_employer { width:8em; }
+#crm-container #first_name { width:10em; }
+#crm-container #contact_source { width:10em; }
+#crm-container #job_title { width:10em; }
+#crm-container div#searchForm select#group { width:15em; }
+#crm-container div#searchForm div#basicCriteria .huge { width:20em; }
+#crm-container div#searchForm div#basicCriteria .listing-box { width:15em; }
+
+#crm-container .form-layout td.label, #crm-container .form-layout-compressed td.label, #crm-container .selector td.label, #crm-container .form-layout-compressed th.label {
+  padding: 0.5em 0 0 0;
+}
+
+#crm-container #alpha-filter li {
+  margin: 0;
+  padding: 2px 2px;
+}
+
+div#civicrm-footer {
+  display: none;
+}
+
+#crm-container div.form-item dd {
+  padding-top: 0.83em;
+}
+
+#crm-container div.form-item dd.font-size12pt {
+  padding-top: 5px;
+}
+
+#crm-container .page-id-4 #membership,
+#crm-container #printer-friendly,
+.contrib-id-4 h1 {
+  display:none;
+}
+
+.block-crm #id_search_block #widget_id_sort_name {
+  width: 8em !important;
+}

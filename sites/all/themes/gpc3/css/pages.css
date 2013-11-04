@@ -1,0 +1,557 @@
+/* $Id: pages.css,v 1.6 2009/08/12 21:41:11 johnalbin Exp $ */
+
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * .links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+body {
+  background: url('../images/bg_gradient.png') repeat-x;  
+  margin: 0;
+}
+
+#page {
+}
+
+#page-inner {
+}
+
+/*
+ * Header
+ */
+#header {
+	height: 112px;
+	background: url('../images/header_bk.png') repeat-x;
+}
+
+#header-inner {
+}
+
+#logo /* Wrapping link for logo */ {
+  float: left; /* LTR */
+  margin: 0 10px 0 0; /* LTR */
+  padding: 0;
+}
+
+#name-and-slogan /* Wrapper for website name and slogan */ {
+}
+
+h1#site-name,
+div#site-name /* The name of the website */ {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+#site-name a:hover {
+  text-decoration: underline;
+}
+
+#site-slogan /* The slogan (or tagline) of a website */ {
+}
+
+#header-blocks /* Wrapper for any blocks placed in the header region */ {
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main {
+	background: white;
+}
+
+#main-inner {
+}
+
+/* ALA "even height column" trick */
+
+.one-sidebar.sidebar-right #main-inner {
+  background: white url(../images/main_bk_right_sidebar.png) repeat-y;
+}
+
+.one-sidebar.sidebar-left #main-inner {
+  background: white url(../images/main_bk_left_sidebar.png) repeat-y;
+}
+
+.two-sidebars #main-inner {
+  background: white url(../images/main_bk_two_sidebars.png) repeat-y;
+}
+
+
+/*
+ * Content
+ */
+#content {
+}
+
+#content-inner {
+}
+
+#mission /* The mission statement of the site (displayed on homepage) */ {
+}
+
+#content-top /* Wrapper for any blocks placed in the "content top" region */ {
+}
+
+#content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */ {
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+  padding-bottom: 0; /* Undo system.css */
+  background: url('../images/breadcrumb_bk.png') repeat-x;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left:0;
+  margin:0;
+  position:absolute;
+  top:72px;
+}
+
+.breadcrumb-inner {
+	padding-left: 20px;
+}
+
+.liquid-layout .breadcrumb {
+
+}
+
+.banner .breadcrumb {
+  top:-20px;
+}
+
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */ {
+  margin: 0;
+}
+
+#page-title {
+  background: url('../images/banner_node.png') no-repeat top right ;
+  height: 72px;
+  width: 976px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding-bottom: 
+}
+
+h1.title {
+	padding: 20px 0 0 20px;
+}
+
+.sidebar-first h1.title, .two-sidebars h1.title {
+
+}
+
+.liquid-layout #page-title {
+  width: 100%;
+}
+
+.liquid-layout h1.title {
+	
+}
+
+tr.even /* Some tables have rows marked even or odd. */ {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.help /* Help text on a page */ {
+  margin: 1em 0;
+}
+
+.more-help-link /* Link to more help */ {
+  font-size: 0.85em;
+  text-align: right;
+}
+
+#content-inner /* Wrapper for the actual page content */ {
+  margin-top: 20px;
+}
+
+.liquid-layout #content-inner /* Wrapper for the actual page content */ {
+  margin-top: 0;
+}
+
+#content-area ul,
+#content-area ul li,
+#content-bottom ul,
+#content-bottom ul li {
+  list-style-type: disc;
+  list-style-position:inside;
+}
+
+#content-area ul ul,
+#content-area ul ul li,
+#content-bottom ul ul,
+#content-bottom ul ul li {
+  list-style-type: circle;
+  list-style-position:inside;
+}
+
+#content-area ul,
+#content-bottom ul {
+  margin: .5em 10px 20px;
+  padding: 0;
+}
+
+#content-area > ul,
+#content-bottom > ul {
+  margin: 1em 20px;
+  padding: 0;
+}
+
+
+#content-area ul ul,
+#content-bottom ul ul {
+  margin-left: 20px;
+}
+
+#content-area .view-content .item-list ul {
+  margin: 0;
+}
+
+#content-area .view-content .item-list ul li {
+  padding: 8px 10px 0 20px;
+  list-style-type: none;
+  list-style-position:outside;
+}
+
+/* 960.gs-style content wrappers to fit to grid */
+
+.grid-1, .grid-2, .grid-3, .grid-4 {
+	display:inline;
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	position:relative;
+}
+
+.row-4, .row-3, .row-2, .row-1 {
+  margin-left: -10px;
+  clear:both;
+}
+
+.row-6 {
+  margin-left: 10px;
+  clear:both;  
+}
+
+.row-6:after, .row-4:after, .row-3:after, .row-2:after, .row-1:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.row-1 { width: 156px; }
+.row-2 { width: 312px; }
+.row-3 { width: 468px; }
+.row-4 { width: 624px; }
+.row-6 { width: 976px; }
+.grid-1 { width: 136px; }
+.grid-2 { width: 292px; }
+.grid-3 { width: 448px; }
+.grid-4 { width: 604px; }
+.prefix-1 { padding-left: 136px; }
+.prefix-2 { padding-left: 292px; }
+.prefix-3 { padding-left: 448px; }
+.suffix-1 { padding-right: 136px; }
+.suffix-2 { padding-right: 292px; }
+.suffix-3 { padding-right: 448px; }
+.alpha { margin-left: 0; }
+.omega { margin-right: 0; }
+
+.row-6 .gutter-right {
+	margin-right: 20px;
+}
+
+.row-6 .gutter-left {
+  margin-left: 20px;
+}
+
+#content-area .button > a {
+	text-decoration: none;
+	font-style: italic;
+}
+
+#content-area .grid-4.action, #content-area .grid-3.action, #content-area .grid-2.action, #content-area .grid-1.action {
+  background: url(../images/action_hdr_bk.png) repeat-x;
+  margin-bottom: 20px;
+}
+
+#content-area .grid-4.action:after, #content-area .grid-3.action:after, #content-area .grid-2.action:after, #content-area .grid-1.action:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+#content-area .action > a {
+  color: black;
+  text-decoration: none;
+}
+
+#content-area .action img {
+	margin: 10px 0 0 20px;
+	float: left;
+}
+
+#content-area .action p,
+#content-area .action ul {
+  margin-left: 102px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+#content-area .action.no-image p {
+  margin-left: 20px;
+}
+
+#content-area .action h2 {
+  background: url(../images/action_hdr_bk_right.png) no-repeat top right;
+	margin: 0;
+	padding-top: 9px;
+	padding-left: 20px;
+	height: 30px;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  white-space:nowrap;
+}
+
+table {
+	width: 100%;
+}
+
+table td, table th {
+	padding: 4px 20px;
+}
+
+tbody {
+	border-top: 2px solid #64102f;
+}
+
+tbody .odd {
+	background: #efefef;
+}
+
+tbody .even {
+  background: #fafafa;
+}
+
+tbody td p {
+  margin: 0;
+}
+
+ul.links /* List of links */ {
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul.links.inline {
+  margin: 0;
+  display: block;
+}
+
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+.pager /* A list of page numbers when more than 1 page of content is available */ {
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.pager a,
+.pager strong.pager-current /* Each page number in the pager list */ {
+  padding: 0.5em;
+}
+
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */ {
+  margin: 1em 0;
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+  text-align: right; /* LTR */
+}
+
+#content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your #sidebar-first
+ * (see the layout.css file.)
+ */
+#sidebar-first {
+	z-index: 1;
+}
+
+#sidebar-first-inner {
+	padding-right: 10px;
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your #sidebar-second
+ * (see the layout.css file.)
+ */
+#sidebar-second {
+	z-index: 4;
+}
+
+#sidebar-second-inner {
+}
+
+#banner {
+}
+
+#banner-inner {
+}
+
+#banner img {
+     position: relative;
+    top: 0;
+    right: 0;
+    left: 0;  /* AAR - This is covered by blocks.css blocks-views-slideshow-block-1 */
+    float:right; 
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer-inner {
+}
+
+#footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                   and for any blocks placed in the footer region */ {
+}
+
+/*
+ * Closure
+ */
+#closure-blocks /* Wrapper for any blocks placed in the closure region */ {
+}
+
+/*
+ * Drupal boxes
+ *
+ * Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+ */
+.box /* Wrapper for box */ {
+}
+
+.box h2 /* Box title */ {
+}
+
+.box .content /* Box's content wrapper */ {
+}
+
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+.element-hidden {
+  display: none;
+}
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users.
+ */
+.element-invisible {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+h1.title.element-invisible {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  margin:0;
+}
+
+.opml-icon {
+	display: none;
+}

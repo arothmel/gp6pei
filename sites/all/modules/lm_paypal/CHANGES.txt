@@ -1,0 +1,10 @@
+6.x-1.2 2013-09-29
+==================
+* Use SSL & HTTP/1.1 to verify the IPN.
+* #1369604 by Brian Altenhofel: convert install file to UNIX line endings
+* Add an 'Action' header to admin/lettings/lm_paypal/subscribers/0
+* #331510 by lyricnz: Don't display subscription in your user profile if you can't subscribe.
+* PGSQL compatibility fixes [#112317]
+* Don't t() a string passed to watchdog().
+* Use SSL (https://) to submit orders to PayPal
+* Add tabs to admin interface.

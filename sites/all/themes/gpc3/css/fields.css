@@ -1,0 +1,91 @@
+/* $Id: fields.css,v 1.3 2009/08/12 08:03:52 johnalbin Exp $ */
+
+/**
+ * @file
+ * Field Styling
+ */
+
+
+/*
+ * Field types
+ */
+
+.field /* Wrapper for any CCK field. */ {
+}
+
+.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
+}
+
+.field-type-filefield /* Field from filefield module */ {
+}
+
+.field-type-nodereference {
+}
+
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-number-integer {
+}
+
+.field-type-text {
+}
+
+.field-type-userreference {
+}
+
+
+
+
+/*
+ * Named fields
+ */
+
+.field-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
+}
+
+.field-field-original-source-name,
+.field-field-source-link,
+.field-field-original-author {
+  margin-top: 8px;
+}
+
+.node .field-field-photo-0 {
+	float:right;
+	padding-left: 10px;
+	padding-bottom: 2px;
+}
+
+.node .field-type-emvideo {
+  margin: 20px 0;
+}
+
+.view-embedded-photo.view-display-id-page_1 .views-row {
+	clear:both;
+}
+
+.view-embedded-photo.view-display-id-page_1 .views-field-field-em-image-embed {
+  margin: 10px 10px 20px 0;
+  float: left;
+}
+
+.view-embedded-photo.view-display-id-page_1 .views-field-teaser {
+  margin-bottom: 20px;
+}
+
+.field-field-audio {
+  margin: 10px 0;
+  }
+
+.views-field-field-audio-fid {
+  padding-top: 10px;
+}
+
+.field-field-audio .field-label-inline-first {
+  float: left;
+  padding-right: 10px;
+}
+

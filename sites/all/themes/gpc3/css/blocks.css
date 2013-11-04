@@ -1,0 +1,527 @@
+/* $Id: blocks.css,v 1.2 2009/08/12 08:03:52 johnalbin Exp $ */
+
+/**
+ * @file
+ * Block Styling dfdf vd
+ */
+
+.block /* Block wrapper */ {
+  /* margin-bottom: 1em; */
+}
+
+#sidebar-second .block {
+	background: #ebefe8;
+	padding: 20px;
+	border-bottom: solid white 1px;
+}
+
+#sidebar-second .block h2 {
+  margin: 0 0 10px 0;
+  line-height: 1em;
+}
+
+#sidebar-second .item-list ul,
+#sidebar-second ul.menu,
+#sidebar-first #block-block-108 ul,
+#sidebar-first #block-block-110 ul {
+  margin-bottom: 0;
+}
+
+#sidebar-second ul.menu li,
+#sidebar-first #block-block-108 ul li,
+#sidebar-first #block-block-110 ul li,
+#sidebar-first .item-list ul li {
+  padding: 0;
+  list-style-type: square;
+  list-style-image: url('../images/list_arrow.png');
+  list-style-position:outside;
+  margin-left: 12px;
+}
+
+#sidebar-first #block-block-108 ul li,
+#sidebar-first #block-block-110 ul li {
+	display:list-item;
+	font-size: .9em;
+}
+
+#sidebar-second .item-list li {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+#sidebar-second .view .item-list li .views-field-subject {
+  font-size: 1.15em;
+}
+
+#sidebar-second .view .item-list li .views-field-name a {
+  color: black;
+}
+
+#sidebar-second .view .item-list li .views-field-name a:hover {
+  color: #990066;
+}
+
+#sidebar-second .view table td {
+	font-size: .9em;
+}
+
+#sidebar-first h2.title,
+#sidebar-second label,
+#sidebar-second h2 {
+  display: block;
+  padding-top: 2px;
+  color: black;
+  font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: .9em;
+}
+
+#sidebar-second label {
+	float: left;
+}
+
+#sidebar-first .block {
+	margin: 20px 0;
+}
+
+#sidebar-first .block .menu,
+#sidebar-first .block .item-list {
+  font-size: smaller;
+}
+
+#sidebar-first .block .menu ul {
+  list-style: outside;
+}
+
+.block.region-odd /* Zebra striping for each block in the region */ {
+}
+
+.block.region-even /* Zebra striping for each block in the region */ {
+}
+
+.block.odd /* Zebra striping independent of each region */ {
+}
+
+.block.even /* Zebra striping independent of each region */ {
+}
+
+.region-count-1 /* Incremental count for each block in the region */ {
+}
+
+.count-1 /* Incremental count independent of each region */ {
+}
+
+.block-inner /* Additional wrapper for block */ {
+}
+
+.block h2.title /* Block title */ {
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First administrator-defined block */ {
+}
+
+#block-blog-0 /* "Recent blog posts" block */ {
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comments-0 /* "Recent comments" block */ {
+}
+
+#block-forum-0 /* "Active forum topics" block */ {
+}
+
+#block-forum-1 /* "New forum topics" block */ {
+}
+
+#block-menu-primary-links /* "Primary links" block */ {
+}
+
+#block-menu-secondary-links /* "Secondary links" block */ {
+}
+
+#block-node-0 /* "Syndicate" block for primary RSS feed */ {
+}
+
+#block-poll-0 /* "Most recent poll" block */ {
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-0.region-count-1 /* "Search form" block */ {
+	background: #64102f;
+	margin-top: 0;
+	padding-top:6px;
+	padding-bottom: 8px;
+	height: 26px;
+}
+
+#block-search-0.region-count-1 input {
+	display: block;
+	float: left;
+}
+
+#block-search-0.region-count-1 input#edit-search-block-form-1 {
+	margin: auto 10px;
+  font-size: .82em;
+  height: 15px;
+}
+
+#block-search-0.region-count-1 input#edit-submit {
+  margin: auto 0;
+}
+
+#block-search-0.region-count-1 #edit-search-block-form-1-wrapper label {
+	color: white;
+	display: block;
+}
+
+#block-search-0 h2.title {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+#block-statistics-0 /* "Popular content" block */ {
+}
+
+#block-user-0 /* "User login form" block */ {
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */ {
+}
+
+/* 
+ * Header Blocks
+ */
+
+#header-blocks #welcome {
+  background-color: transparent;
+  background-image:none;
+  padding-top:3px;
+  padding-left:6px;
+  color:black;
+  height:2em;
+  overflow:hidden;
+  font-size:0.85em;
+}
+
+#header-blocks #welcome a {
+  text-decoration:none;
+  color:black;
+}
+
+#header-blocks #welcome li, #welcome ul {
+  display:inline;
+  padding:0;
+}
+
+#block-block-93 {
+  /* to enable clicking of other elements in header */
+  width: 245px;
+}
+
+/*
+ * Right Sidebar Blocks
+ */
+
+/* GPPEI Twitter */
+
+##block-block-10 /* twitter feed */ {
+    margin:4px 0px 4px 0px;
+    list-style: none;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    padding: 30px 0 0 0;
+} 
+
+#block-block-10 h1 {
+  display: block;
+  padding-top: 2px;
+  color: black;
+  font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: .9em;
+}
+
+
+#block-block-4 h2, #block-views-calendar-block_1 h2, #calendar-date-block_1 h2, #followlink h2, #block-block-10 h2 /* twitter feed on Samwise */ ,
+ #block-views-book_club-block_1 h2, #block-simplenews-6 h2 {
+    color: white;
+    display: inline-block;
+    font-family: "AvantGardeGothicITCW01M 731087" !important;
+    text-align: center;
+    width: 245px;
+    padding: 15px;
+    color:#F2F8AB;
+    background: #158A26 url(../images/green_bar.jpg) no-repeat right bottom;
+    text-transform:uppercase;
+}    
+
+
+/* Right column stuff */
+
+a.donate-button:link {
+    color: white;
+}
+a.donate-button {
+    color: white;
+    display: inline-block;
+    font-family: "AvantGardeGothicITCW01M 731087" !important;
+    text-align: center;
+    width: 245px;
+    padding: 15px;
+    /* height: 40px; */
+}
+.burgundy-gradient {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #A70C50;  /* fallback color if gradients are not supported */
+    background-image: linear-gradient(to bottom, #A70C50 0%, #530824 100%);
+    background: -webkit-linear-gradient(#A70C50, #530824);
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+}
+.burgundy-gradient:hover {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #530824;  /* fallback color if gradients are not supported */
+    background-image: linear-gradient(to bottom, #530824 0%, #A70C50 100%);
+    background: -webkit-linear-gradient(#530824, #A70C50);
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+}
+
+
+
+
+#block-block-17  {    /* Donate Button */
+   	padding-top:6px;
+}
+
+
+#block-block-86 a {
+  margin-left: 4px;
+}
+
+#block-block-86.block {
+  padding: 12px 20px 10px 20px;
+}
+
+#block-block-86 label {
+	margin-top: 2px;
+  margin-right: 8px;
+}
+
+/*
+ * Subfooter blocks
+ */
+
+#block-block-96 #subfooter {
+  border-top: 8px solid #4aaa42;
+  background: white;
+}
+
+#block-block-96 img {
+  float: left;
+}
+
+#block-block-96 p#contact-info {
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+  color: #4aaa42;
+  font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-size: smaller;
+  line-height: 1.1em;
+  margin-top: 20px;
+}
+ 
+#block-block-96 p#privacy {
+	float:left;
+	margin-left: 20px;
+	font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-size: .6em;
+  clear:both;
+}
+
+#block-block-96 p#respect-my-authoritay {
+  margin-right: 20px;
+  float: right;
+  font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-size: .6em;
+  text-align: right;
+}
+
+#sidebar-second #block-phplist-0 h2 {
+	float: none;
+} 
+
+#sidebar-second #block-phplist-0 .form-checkboxes {
+  display:none;
+}
+
+#block-views-blog_comments-block_1 .pager-current {
+  display:none;
+}
+
+/*
+ * Footer Links
+ */
+ /* was 98   change to 6 */
+#block-block-6 {
+   background-image:url(../images/footer_6_col_back.png);
+   	text-align:center;
+	font-family: Verdana, Tahoma, Arial, Helvetica, 'Bitstream Vera Sans', sans-serif;
+       font-size:10pt;
+       margin-bottom: .3em;
+       margin-top: 20px;
+}
+	
+
+
+#links-footer h4 {
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family: 'Arial Narrow', Tahoma, Verdana, Arial, Helvetica, 'Bitstream Vera Sans', sans-serif;
+  font-size:0.6em;
+  margin-bottom: .3em;
+  margin-top: 20px;
+}
+
+#links-footer ul {
+	margin-top: .3em;
+}
+
+#links-footer a {
+	font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+	font-size:9pt;
+	text-decoration: none;
+	color: #006600;
+	text-align:left;
+}
+
+/*
+ * Frontpage Banner - Original template pointed to block_2. This has to be changed to block_1 for GPPEI. AAR
+ */
+
+/*
+ * Frontpage Banner
+ */
+
+#block-views-slideshow-block_1 {
+	background: url(../images/banner_home_bk.jpg); /* The lovely green back drop */
+	/* height: 319px;  */
+	height: 319px; 
+}
+
+#block-views-slideshow-block_1 .views_slideshow_div_breakout_teaser {
+	 float: left; 
+}
+
+#block-views-slideshow-block_1 .views_slideshow_breakout_teasers {
+  position: absolute;
+  top: 262px;
+  left: 16px;
+}
+
+#block-views-slideshow-block_1 .views_slideshow_div_breakout_teaser .node {
+  height: 27px;
+  width: 31px;
+  margin: 10px 4px;
+  background: url(../images/slide_tab_bk.png);
+}
+
+#views_slideshow_main_1 .views_slideshow_teaser_section div .node-inner a.slide-image-link {
+  float: right;
+}
+
+#views_slideshow_main_1 .views_slideshow_teaser_section div.slide-text {
+  height: 220px;
+  padding: 20px;
+}
+
+#views_slideshow_singleframe_main_slideshow-block_1 .views_slideshow_teaser_section div.slide-text h2.title {
+  font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+#views_slideshow_singleframe_main_slideshow-block_1 .views_slideshow_teaser_section div.slide-text h2.title a:link,
+#views_slideshow_singleframe_main_slideshow-block_1 .views_slideshow_teaser_section div.slide-text h2.title a:visited {
+  color: black;
+}
+
+#views_slideshow_singleframe_main_slideshow-block_1 .view-display-id-block_1 .views_slideshow_teaser_section div.slide-text .body {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+#block-views-slideshow-block_1 .views_slideshow_breakout_teasers span {
+  position: absolute;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#block-views-slideshow-block_1 .views_slideshow_active_teaser .node {
+  background: url(../images/slide_tab_bk_active.png);
+}
+#block-views-slideshow-block_1 img.imagecache-slide-frontpage {
+	padding: 20px;
+}
+
+#views_slideshow_singleframe_main_slideshow-block_1 {
+  /* margin-left: 332px; */
+  margin-left: 252px;
+  /* padding-top: 24px; */
+    padding-top: 8px;
+}
+/* civiCRM block */
+div.block-civicrm ul li.leaf, div.block-civicrm ul li.collapsed, div.block-civicrm ul li.expanded {
+  margin: 0;
+}
+
+#gpc-report-organizer-form #edit-riding {
+  width: 136px;
+}
+
+#content-bottom .block {
+  background: #ebefe8;
+  padding: 20px;
+  border-bottom: solid white 1px;
+  display:inline;
+  float:left;  
+  position:relative;
+  width: 252px;
+}
+#content-bottom .block.odd {
+	margin-right: 20px;
+	clear:both;
+}

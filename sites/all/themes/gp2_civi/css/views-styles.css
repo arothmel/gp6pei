@@ -1,0 +1,97 @@
+/* $Id: views-styles.css,v 1.1 2009/08/12 04:25:15 johnalbin Exp $ */
+
+/**
+ * @file
+ * Views Styling
+ */
+ 
+ 
+ .views-row {
+ padding: 0px 20px 5px 10px;
+ /* border-bottom: 1px solid #99D28D; */ 
+ }
+ 
+.views-field-title {
+	color: #66CC66;
+	font-size: 1.8em;
+	border-bottom-style: none;
+	padding-bottom: 4px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+        margin-top: 10px;
+	/*  padding-top: 6px; */
+ }
+
+.views-field-title  a:visited {
+color: #025E25;
+}
+
+.views-field-title  a:hover {
+    color: #68AD2E;
+}
+
+.views-field-field-news-link-url {
+    color: #896490;
+	font-size: 1.3em;
+	border-bottom-style: none;
+	padding-bottom: 4px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	 border-bottom: 1px solid #99D28D; 
+	/*  padding-top: 6px; */
+}
+
+.views-field-field-news-link-url a:visited {
+    color: #025E25;
+}
+
+.views-field-field-news-link-url a:hover {
+    color: #68AD2E;
+}
+
+.views-field-created {
+    padding-bottom: 0px;
+    font-style: italic;
+    }
+
+.views-field-teaser {
+padding-bottom: 12px;
+font-style: normal;
+}
+
+
+
+
+/* Centre colums as used for CPF - AAR */
+
+#wrap {
+ width:100%;
+ margin:0 auto;
+ background:#F3F1F1;
+ font-size: 1.2em;
+border-bottom: 1px solid #99D28D;
+ }
+ 
+#wrap h2{
+    color: #2F4E00;
+}
+
+#wrap h3{
+    color: #2F4E00;
+}
+.left {
+ float:left;
+ width:50%;
+ }
+
+.right {
+ padding-top: 0px;
+ float:right;
+ width:50%;
+ }
+
+
+
+

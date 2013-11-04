@@ -1,0 +1,232 @@
+/* $Id: blocks.css,v 1.4 2009/11/05 11:05:39 johnalbin Exp $ */
+
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+  margin-bottom: 1em;
+}
+
+.block.region-odd /* Zebra striping for each block in the region */ {
+}
+
+.block.region-even /* Zebra striping for each block in the region */ {
+}
+
+.block.odd /* Zebra striping independent of each region */ {
+}
+
+.block.even /* Zebra striping independent of each region */ {
+}
+
+.region-count-1 /* Incremental count for each block in the region */ {
+}
+
+.count-1 /* Incremental count independent of each region */ {
+}
+
+.block h2.title /* Block title */ {
+    text-align: left;
+    margin:4px 5px 4px 0px;
+    background: #68AD2E;
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-8  { /*flower bottom*/
+    float: left;
+    margin-top: -19px;    /* the elusive flower-bottom positioning... */
+    position: relative;
+}
+
+
+#block-block-1 /* First administrator-defined block  join donate*/ {
+    margin-top: 6px;
+    position: relative;
+}
+
+
+
+#block-blog-0 /* "Recent blog posts" block */ {
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */ {
+  border-top: 1px solid #888;
+  padding: 1em 0 0 3em;
+  font-size: 18px;
+}
+
+#block-comment-0 /* "Recent comments" block */ {
+}
+
+#block-forum-0 /* "Active forum topics" block */ {
+}
+
+#block-forum-1 /* "New forum topics" block */ {
+}
+
+#block-menu-primary-links /* "Primary links" block */ {
+
+}
+
+
+#block-menu-secondary-links /* "Secondary links" block */ {
+}
+
+#block-node-0 /* "Syndicate" block for primary RSS feed */ {
+}
+
+#block-poll-0 /* "Most recent poll" block */ {
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-0 /* "Search form" block */ {
+}
+
+#block-statistics-0 /* "Popular content" block */ {
+}
+
+#block-user-0 /* "User login form" block */ {
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */ {
+  color:#000000;
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */ {
+}
+
+
+
+
+
+
+#block-views-calendar-block_1{  
+    margin:4px 0px 4px -14px;
+    margin-top: 20px;   /* Upcoming below menu bar */
+    }
+    
+
+    
+#block-block-4 /* Green Links */ {
+    margin:4px 0px 4px 0px;
+}   
+ 
+
+#followlink {
+    margin:4px 0px 4px -20px;
+ /*   border-top: 1px solid #ebebeb;
+   border-bottom: 1px solid #ebebeb;  */
+   }  
+  
+
+ 
+ #followlink a {
+      width: 20px;
+      height:25px;
+      text-indent: -9999px;
+      float: left;
+}    
+
+
+#block-block-10 /* twitter feed */ {
+    margin:4px 0px 4px 0px;
+    list-style: none;
+} 
+
+
+#block-block-4 h2, #block-views-calendar-block_1 h2, #followlink h2, #block-block-10 h2 /* twitter feed on Samwise */ ,
+ #block-views-book_club-block_1 h2, #block-simplenews-6 h2 {
+    border-bottom: 0px;
+   text-align: left;
+   margin-right: 1px;
+    font-size:1.2em;
+    line-height:2.2em;
+    letter-spacing: .7px; 
+    color:#F2F8AB;
+    background: #158A26 url(../images/green_bar.jpg) no-repeat right bottom;
+    font-family:Arial,Helvetica,sans-serif;
+    text-transform:uppercase;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+}    
+
+
+#block-block-11  { /* Green Party leader */
+    margin:4px 0px 4px 0px;
+    list-style: none;
+} 
+
+
+#block-block-11 h2  { /* Green Party leader*/
+    border-bottom: 0px;
+   text-align: left;
+   margin-right: 1px;
+    font-size:1.1em;
+    line-height:2.2em;
+    letter-spacing: .6px; 
+    color:#F2F8AB;
+    background: #158A26 url(../images/gpleader_sharon_labchuk.jpg) no-repeat right bottom;
+    font-family: Arial,Helvetica,sans-serif;
+    text-transform:uppercase;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+}   
+
+
+#block-block-11 h2 a, 
+#block-block-11 h2 a:visited { /* Green Party leader */
+    color:#F2F8AB;
+} 
+
+
+
+   
+/* In the pane configuration modal popup, the top or nearly top 
+   item is 'Pane style'. Select 'System block'. -- merlinofchaos */
+
+/* One */
+   
+
+#block-block-12 h2.title, #block-block-13 h2.title, #block-block-15 h2.title  { /*what a pane*/
+    border-bottom: 0px;
+    text-align: left;
+    margin:4px -2px 4px -4px;
+    font-size:1.3em;
+    line-height:2.2em;
+    letter-spacing: .6px; 
+    color:#F2F8AB;
+    background: #158A26 url(../images/green_bar.jpg) no-repeat right bottom;
+    font-family: Arial,Helvetica,sans-serif;
+    text-transform:uppercase;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+}  
+
+#block-block-12, #block-block-13, #block-block-15   { /*what a pane*/
+    margin:4px 0px 4px 0px;
+    list-style: none;
+} 
+
+#block-block-12 a:visited, #block-block-13 a:visited, #block-block-15 a:visited   { /*what a pane*/
+    color:#005523;
+}  
+

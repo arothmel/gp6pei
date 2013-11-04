@@ -1,0 +1,34 @@
+<div class="column width_320" id="left_sidebar">
+			<div class="client_generated_content" id="media_holder">
+				<img src="images/MovingCanadaForward-EN.jpg">
+			</div>
+			<div class="client_generated_content" id="sidebar_content">
+<p>New Democrats are moving Canada forward with new ideas, renewed leadership and a strong united team. Be a part
+         of it.</p>			</div>
+
+			<div id="tax-calculator-holder">
+				<h3>Tax Credit Calculator</h3>
+				<form class="tax-calculator">
+					<div class="donation-amount-holder">
+						<label for="donation-amount">Donation Amount</label>
+						<input type="text" name="donation-amount" id="donation-amount" class="donation-amount">
+					</div>
+					<div class="calculate-btn-holder">
+						<input type="button" onclick="return calculateCredit()" class="calculate-btn" src="images/tax-calculator-btn.jpg">
+					</div>
+					<div class="donation-after-tax-holder">
+						<label for="donation-after-tax">Cost after tax credit</label>
+						<input type="text" class="donation-after-tax">
+					</div>
+					<div class="learn-more-holder">
+						<a onclick="return popitup('taxcredit.html')" href="#" class="learn-more">Learn More</a>
+					</div>
+				</form>
+			</div>
+
+
+			<div id="ndp_logo_holder">
+				<a class="js-new-window" href="http://www.ndp.ca"><img width="150" height="103" title="Jack Layton NDP" alt="Jack Layton NDP." src="images/ndp-logo.png"></a>
+			</div>
+
+		</div>

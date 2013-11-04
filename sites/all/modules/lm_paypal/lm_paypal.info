@@ -1,0 +1,12 @@
+name = "LM PayPal"
+description = "Lowest level PayPal interface required by other LM PayPal modules."
+package = "LM PayPal"
+core = 6.x
+
+
+; Information added by drupal.org packaging script on 2013-09-29
+version = "6.x-1.2"
+core = "6.x"
+project = "lm_paypal"
+datestamp = "1380443352"
+

@@ -1,0 +1,388 @@
+/* $Id: layout-liquid.css,v 1.17 2009/11/05 12:09:53 johnalbin Exp $ */
+
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+	background-color: #ede8d5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	color: #333333;/*#555;*/
+	line-height:125%;
+}
+
+#page-wrapper,
+.region-page-closure {
+  min-width: 960px; /* Don't allow the browser to make the site unreadable. */
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+	background-image: url('../images/top-bg.jpg');
+	background-repeat: repeat-x;
+	height: 121px;
+	width: 100%;
+}
+
+#header .section {
+}
+
+#search-box {
+}
+
+.region-header {
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content {
+  float: left; /* LTR */
+  width: 100%;
+  margin-left: 0; /* LTR */
+  margin-right: -100%; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+#content .section,
+.no-sidebars #content .section {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-first #content .section {
+  padding-left: 200px; /* LTR */ /* The width + left margin of .region-sidebar-first. */
+  padding-right: 0; /* LTR */
+}
+
+.sidebar-second #content .section {
+  padding-left: 0; /* LTR */
+  padding-right: 200px; /* LTR */ /* The width + right margin of .region-sidebar-second. */
+}
+
+.two-sidebars #content .section {
+  padding-left: 200px; /* The width + left margin of .region-sidebar-first. */
+  padding-right: 200px; /* The width + right margin of .region-sidebar-second. */
+}
+
+/*
+ * Navigation
+ */
+#navigation {
+  float: left; /* LTR */
+  width: 100%;
+  margin-left: 0; /* LTR */
+  margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  height: 2.3em; /* The navigation can have any arbritrary height. We picked one
+                    that is the line-height plus 1em: 1.3 + 1 = 2.3
+                    Set this to the same value as the margin-top below. */
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second {
+  margin-top: 2.3em; /* Set this to the same value as the navigation height above. */
+}
+
+#navigation .section {
+}
+
+
+
+
+
+
+#navigation ul /* Primary and secondary links */ {
+  margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+   background: #025E25 url('../images/flower-bottom.jpg') no-repeat; 
+   height: 33px;   /* cuts off flower bottom */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #bfffbf;
+	text-transform: uppercase;
+	overflow:hidden;
+	padding-top: 6px;  
+   padding-left: 200px;  
+}
+
+#navigation li /* A simple method to get navigation links to appear in one line. */ {
+  float: left; /* LTR */
+  padding: 0 10px 0 0; /* LTR */
+}
+/* menu not used yet..... AAR  */
+
+#menu {
+	/* background-image: url('images/flower-bottom.jpg');*/
+	background: #025E25 url('../images/flower-bottom.jpg') no-repeat; 
+ /*   background: #025E25; */
+    height: 33px;   /* cuts off flower bottom */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #bfffbf;
+	text-transform: uppercase;
+	overflow:hidden;
+    padding-left: 70px;
+}
+
+#menu .flower{
+	z-index:100;
+	}
+
+
+#menu ul {
+	list-style: none;
+	padding: 7px 0 0 10px;
+  margin:0;
+}
+
+
+
+
+
+#menu li {
+	display: inline;
+	margin:-5px 0 0 0;
+	padding:0;
+	
+/*padding: 10px 0 0 20px;*/
+}
+
+#menu li a {
+/*	margin-left:-5px;
+	margin-right:-5px;
+*/
+  margin-top:10px;
+  margin-left:10px;
+  font-size: 11px;
+	color: #bfffbf;
+	text-transform: uppercase;
+/*	letter-spacing:-0.05em;*/
+}
+
+#menu li a.active {
+	color: #ffc423;
+/*	background: url('/themes/GPC/images/selected_menu_background.jpg') 0%;*/
+	padding:10px 5px 10px 5px;
+}
+
+#menu li.special {
+	color: #ebf463;
+}
+#menu .email a {
+	color: #53e353;
+}
+#menu .email {
+	color: #53e353;
+	font-size: 16px;
+	text-transform: none;
+	font-weight:bold;
+	
+	background-image: url('../images/email_arrow.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	
+	margin-left:-2px;
+	margin-right: 5px;
+	padding-right: 20px;
+	padding-top: 7px;
+	float: right;
+}
+
+#secondary_menu ul {
+	background-color: #001b11;
+	height: 22px;
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+
+
+#secondary_menu li {
+	display: inline;
+	margin-right: 10px;
+}
+
+#secondary_menu li a {
+	margin-left:-5px;
+	margin-right:-5px;
+	font-size: 11px;
+	color: #bfffbf;
+	text-transform: uppercase;
+}
+
+#secondary_menu li a.active {
+	color: #ffc423;
+}
+
+#secondary_menu li.special {
+	color: #ebf463;
+}
+
+
+#gray_menu {
+/*	background: #f5f8f7 url('/themes/GPC/images/nav-bg.jpg') repeat-y;*/
+	background-color: #f5f8f7;
+/* 	background-image: url('images/flower-bottom.jpg'); */ 
+	background-position: 0px -33px;
+	background-repeat: no-repeat;
+	height: 56px;
+	margin: 20px;    /* down a bit AAR */
+}
+
+#gray_menu .ticker {
+	margin-left: 194px;
+	padding-top: 8px;
+	font-size:12px;
+}
+
+#gray_menu .search {
+	float: right;
+	padding-top: 5px;
+	padding-right: 10px;
+	width: 260px;
+}
+
+#gray_menu .search .search_box {
+	border: 1px solid #cccccc;
+	float: right;
+	width: 227px;
+	height: 18px;
+	font-size: 11px;
+	color: #666666;
+}
+
+#gray_menu .search .search_button {
+	float: right;
+	width: 21px;
+	border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 0; /* LTR */
+  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+  margin: 0 20px 0 0; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: right; /* LTR */
+  width: 200px;
+  margin-left: -200px; /* LTR */ /* Negative value of .region-sidebar-second's width + right margin. */
+  margin-right: 0; /* LTR */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 0 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#navigation {
+  overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
